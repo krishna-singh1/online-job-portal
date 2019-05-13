@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageAfterLogin.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>JobPortal.com</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="MasterPageStyle.css" rel="stylesheet" type="text/css" media="screen" />
+    </head>
+<body text="#ffffff">
+    <form id="form1" runat="server">
+<div id="header-wrapper">
+	<div id="header">   
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="Default.aspx">Home</a><asp:ImageButton 
+                        ID="ImageButton1" runat="server" ImageUrl="~/Images/job-portal-for-job-seeker.jpeg" 
+                        PostBackUrl="~/Default.aspx" 
+                        
+                        
+                        style="z-index: 1; left: 39px; top: 1px; position:absolute; width: 236px; height: 78px; margin-left: 0px" />
+                </li>
+				<li><a href="AboutUs.aspx">About Us</a></li>
+                <li><a href="Partners.aspx">Partners</a></li>
+                <li><a href="Help.aspx">Help</a></li>
+                <li><a href="Change.aspx">Password</a></li>
+				<li><a href="Default.aspx">Logout</a></li>
+</ul>
+		</div>
+		
+		<!-- end #menu -->
+		
+	</div>
+	<!-- end #header -->
+</div>
+
+
+   
+	<!-- end #logo -->
+	<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+         <p>
+           
+        </p>
+        </asp:ContentPlaceHolder>
+    
+	
+<!-- end #page -->
+
+<div id="footer">
+	<p>Copyright (c) 2019 JobPortal.com. All rights reserved.<a href="Designers.aspx">Designed by Rahul,Krishna,Sairas,Twinkle</a>.</p>
+</div>
+<!-- end #footer -->
+
+    </form>
+
+</body>
+</html>
+
